@@ -1,0 +1,22 @@
+body{
+    background-color: yellowgreen;
+}
+.Login_Container{
+    border: solid 10px black;
+    border-radius: 10px;
+    height: 60ch;
+    width:30%;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    
+}
+.Login_Container h2{
+    font-size: 60px;
+    
+}
+
+.eandp{
+    text-align: center;
+    font-size: 15px;
+}

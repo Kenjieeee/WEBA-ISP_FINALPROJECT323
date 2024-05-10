@@ -1,6 +1,6 @@
 <?php
 
-class Home extends Controller
+class Dashboard extends Controller
 {
   public function index()
   {
@@ -8,6 +8,6 @@ class Home extends Controller
       redirect('login');
     }
 
-    $this->view('home');
+    $this->view('dashboard');
   }
 }

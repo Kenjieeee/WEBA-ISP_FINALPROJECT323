@@ -4,9 +4,9 @@ class Users extends Controller
 {
   public function index()
   {
-    if (!Auth::logged_in()) {
-      redirect('login');
-    }
+     if (!Auth::logged_in()) {
+       redirect('login');
+     }
 
     $x = new User();
     $rows = $x->findAll();
@@ -18,9 +18,9 @@ class Users extends Controller
 
   public function create()
   {
-    if (!Auth::logged_in()) {
-      redirect('login');
-    }
+    //  if (!Auth::logged_in()) {
+    //  redirect('login');
+    //  }
 
     $errors = [];
     $user = new User();
@@ -33,7 +33,12 @@ class Users extends Controller
 
         $user->insert($_POST);
 
-        redirect('users');
+       
+        
+        echo '<script> alert("Created Successfully! ")
+        window.location.href="'.ROOT.'/login";
+        </script>';
+
       } else {
         $errors = $user->errors;
       }
@@ -61,7 +66,7 @@ class Users extends Controller
       redirect('users');
     }
 
-    $this->view('users/edit', [
+    $this->view('editprofile', [
       'row' => $row
     ]);
   }

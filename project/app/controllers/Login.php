@@ -9,7 +9,7 @@ class Login extends Controller
 
     if (count($_POST) > 0) {
 
-      $arr['email'] = $_POST['email'];
+      $arr['username'] = $_POST['username'];
 
       $row = $user->first($arr);
 
@@ -18,7 +18,7 @@ class Login extends Controller
         if (password_verify($_POST['password'], $row->password)) {
 
           Auth::authenticate($row);
-          redirect('home');
+          redirect('dashboard');
         } else {
           $errors['errors'] = "Invalid email or password!";
         }

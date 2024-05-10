@@ -6,11 +6,11 @@
     <h2>Edit User</h2>
     <div class="mb-2">
       <label for="">First Name</label>
-      <input name="firstname" value="<?= $row->firstname ?>" type="text" class="form-control">
+      <input name="fname" value="<?= $row->firstname ?>" type="text" class="form-control">
     </div>
     <div class="mb-2">
       <label for="">Last Name</label>
-      <input name="lastname" value="<?= $row->lastname ?>" type="text" class="form-control">
+      <input name="lname" value="<?= $row->lastname ?>" type="text" class="form-control">
     </div>
     <div class="mb-2">
       <label for="">Email</label>
