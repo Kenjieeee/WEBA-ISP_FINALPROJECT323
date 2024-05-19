@@ -3,6 +3,7 @@
     <div class = "maincontent">
         <div class = "completedcontent">
             <h1>COMPLETED ITOOOOOOOOOOOOOOO</h1>
+            <br><hr>
         </div>
     </div>
 

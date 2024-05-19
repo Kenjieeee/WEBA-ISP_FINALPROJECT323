@@ -3,7 +3,7 @@
 <div class="maincontent">
     <div class="editcontent">
         <h1>EDIT PROFILE</h1>
-        <form action="" method = "POST" class = "w-50 mt-5">
+        <form action="" method = "POST" class = "">
             <div class = "editprofilemain">
                 <br><br><br>
                 <div class = "editimg">
@@ -30,10 +30,7 @@
                         <option value="Maried">Maried</option>
                     </select>
                     <label>Email:</label>
-                    <input type="email" value="<?= $row->email ?>"><br><br>
-                    <label>Username:</label>
-                    <input type="text" value="<?= $row->password ?>">
-                    
+                    <input type="email" value="<?= $row->email ?>">
                     <br><br>
                     <button type="submit" class="btn btn-primary">Update</button>
             </div>

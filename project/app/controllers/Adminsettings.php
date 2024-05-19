@@ -1,6 +1,6 @@
 <?php
 
-class Settings extends Controller{
+class Adminsettings extends Controller{
     public function index()
     {
 
@@ -35,9 +35,9 @@ class Settings extends Controller{
 
         Auth::authenticate($row);
         
-        redirect('dashboard');
+        redirect('adminpending');
        }else{
-        $this->view('settings');
+        $this->view('adminsettings');
        }
     }
 

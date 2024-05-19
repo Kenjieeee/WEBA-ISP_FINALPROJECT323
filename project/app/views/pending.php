@@ -3,6 +3,7 @@
     <div class = "maincontent">
         <div class = "pendingcontent">
             <h1>PENDING/PROCESS ITOOOOOOOOOOOOOOO</h1>
+            <br><hr>
         </div>
     </div>
 

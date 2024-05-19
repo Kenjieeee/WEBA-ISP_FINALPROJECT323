@@ -18,7 +18,13 @@ class Login extends Controller
         if (password_verify($_POST['password'], $row->password)) {
 
           Auth::authenticate($row);
-          redirect('dashboard');
+          if($_SESSION['USER']->role == 'User'){
+            redirect('dashboard');
+          }
+          else if($_SESSION['USER']->role == 'Admin'){
+            redirect('adminpending');
+          }
+          
         } else {
           $errors['errors'] = "Invalid email or password!";
         }

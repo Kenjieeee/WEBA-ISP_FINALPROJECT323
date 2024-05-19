@@ -3,6 +3,7 @@
 <div class="maincontent">
     <div class="dashboardcontent">
         <h1>DASHBOARD ITOOOOOOOOOOOOOOO</h1>
+        <br><hr>
     </div>
 </div>
 

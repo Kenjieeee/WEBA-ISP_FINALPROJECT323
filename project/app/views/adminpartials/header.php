@@ -31,36 +31,43 @@ https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 			</div>
 		</div>
 		 <ul>
-			<li>
-				<a href = "<?= ROOT ?>/dashboard">
-					<i class = "bx bx-grid-alt" style = "font-size:24px;"></i>
-					<span class="nav-item">Dashboard</span>
+			<li >
+				<a href = "<?= ROOT ?>/adminpending" >
+					<i class = "bx bx-timer" style = "font-size:24px;"></i>
+					<span class="nav-item">Pending Request</span>
 				</a>
-				<span class="tooltip">Dashboard</span>
+				<span class="tooltip">Pending Request</span>
 			</li>
 			<li>
-				<a href = "<?= ROOT ?>/request">
-					<i class = "bx bx-git-pull-request" style = "font-size:24px;"></i>
-					<span class="nav-item" >Request</span>
+				<a href = "<?= ROOT ?>/adminresidents">
+					<i class = "bx bx-building-house" style = "font-size:24px;"></i>
+					<span class="nav-item">Residents</span>
 				</a>
-				<span class="tooltip">Request</span>
+				<span class="tooltip">Residents</span>
 			</li>
 			<li>
-				<a href = "<?= ROOT ?>/pending">
-					<i class = "bx bx-time" style = "font-size:24px;"></i>
-					<span class="nav-item">Pending/Process</span>
+				<a href = "<?= ROOT ?>/adminhistory">
+					<i class = "bx bx-history" style = "font-size:24px;"></i>
+					<span class="nav-item">History</span>
 				</a>
-				<span class="tooltip">Pending/Process</span>
+				<span class="tooltip">History</span>
 			</li>
 			<li>
-				<a href = "<?= ROOT ?>/completed">
-					<i class = "bx bx-message-square-check" style = "font-size:24px;"></i>
-					<span class="nav-item">Completed</span>
+				<a href = "<?= ROOT ?>/admindocuments">
+					<i class = "bx bx-file" style = "font-size:24px;"></i>
+					<span class="nav-item">Documents</span>
 				</a>
-				<span class="tooltip">Completed</span>
+				<span class="tooltip">Documents</span>
+			</li>
+            <li>
+				<a href = "<?= ROOT ?>/adminspam">
+					<i class = "bx bxs-x-circle" style = "font-size:24px;"></i>
+					<span class="nav-item">Spam</span>
+				</a>
+				<span class="tooltip">Spam</span>
 			</li>
 			<li>
-				<a href = "<?= ROOT ?>/settings">
+				<a href = "<?= ROOT ?>/adminsettings">
 					<i class = "bx bxs-cog" style = "font-size:24px;"></i>
 					<span class="nav-item">Settings</span>
 				</a>
