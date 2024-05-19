@@ -198,8 +198,25 @@
 	margin: 8px 0;
 	font-size: 17px;
 	background-color: whitesmoke;
-	
+	padding-left: 100px;
 }
+.mainrequestcontents .submitbtn{
+	border: none;
+	color: white;
+	padding: 14px 0px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	border-radius: 200px;
+	width: 130px;
+	background-color: #28a745;
+	cursor: pointer;
+}
+
+
+
+
 .maincontent .Pending_request table{
 	width: 100%;
 	height: 3rem;
@@ -226,12 +243,6 @@
 	background-color: #dc3545;
 }
 
-
-
-
-
-
-
 .maincontent .admin_residents table{
 	width: 100%;
 	height: 2rem;
@@ -256,3 +267,153 @@
 	width: 130px;
 	background-color: #17a2b8;
 }
+
+
+.maincontent .admin_history table{
+	width: 100%;
+	height: 3rem;
+	border: solid 1px black;
+}
+.maincontent .admin_history a{
+	border: none;
+	color: white;
+	padding: 14px 0px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	border-radius: 200px;
+	width: 130px;
+}
+.maincontent .admin_history .viewbtn{
+	border: none;
+	color: white;
+	padding: 14px 0px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	border-radius: 200px;
+	width: 130px;
+	background-color: #17a2b8;
+}
+.maincontent .admin_spam table{
+	width: 100%;
+	height: 3rem;
+	border: solid 1px black;
+}
+.maincontent .admin_spam a{
+	border: none;
+	color: white;
+	padding: 14px 0px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	border-radius: 200px;
+	width: 130px;
+}
+.maincontent .admin_spam .reviewbtn{
+	background-color: #17a2b8;
+}
+.maincontent .admin_spam .approvebtn{
+	background-color: #28a745;
+}
+
+.pendingcontent table{
+	width: 100%;
+	height: 3rem;
+	border: solid 1px black;
+}
+.pendingcontent a{
+	border: none;
+	color: white;
+	padding: 14px 0px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	border-radius: 200px;
+	width: 130px;
+}
+.pendingcontent .cancelbtn{
+	background-color: #dc3545;
+}
+.completedcontent table{
+	width: 100%;
+	height: 3rem;
+	border: solid 1px black;
+}
+.completedcontent a{
+	border: none;
+	color: white;
+	padding: 14px 0px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	border-radius: 200px;
+	width: 130px;
+}
+.completedcontent .viewbtn{
+	background-color: #17a2b8;
+}
+.total_container{
+	border: solid 1px black;
+	width: 100%;
+	height: 380px;
+	padding: 50px;
+}
+.total_req{
+	border: solid 1px black;
+	height: 220px;
+	width: 31%;
+	background: red;
+	float: left;
+	margin: 10px;
+}
+.total_req label{
+	padding: 30px;
+	font-size: 30px;
+}
+
+.total_pending{
+	border: solid 1px black;
+	height: 220px;
+	width: 31%;
+	background: bisque;
+	float: left;
+	margin: 10px;
+}
+.total_pending label{
+	padding: 30px;
+	font-size: 30px;
+}
+.total_failed{
+	border: solid 1px black;
+	height: 220px;
+	width: 31%;
+	background: blue;
+	float: left;
+	margin: 10px;
+}
+.total_failed label{
+	padding: 30px;
+	font-size: 30px;
+}
+.recent_container{
+	border: solid 1px black;
+	width: 100%;
+	height: 380px;
+}
+.recent_container .h2_recent{
+	background-color: #17a2b8;
+	color: white;
+	padding: 10px;
+}
+.recent_container .table_recent table{
+	width: 100%;
+	height: auto;
+	border: solid 1px black;
+}
+

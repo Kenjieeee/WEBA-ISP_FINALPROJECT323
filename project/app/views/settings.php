@@ -16,7 +16,7 @@
                     <?php } ?>
                     
                     <br>  
-                    <input type="file" name = "image"><br><br>
+                    <input type="file" name="image"><br><br>
                 </div>
                     <label>Firstname:</label>
                     <input type="text" name = "fname" value="<?= $_SESSION['USER']->fname ?>">

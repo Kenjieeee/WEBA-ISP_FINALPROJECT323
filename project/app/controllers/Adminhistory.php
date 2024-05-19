@@ -3,7 +3,12 @@
 class Adminhistory extends Controller{
     public function index()
     {
-        $this->view('adminhistory');
+        $request = new Reqinfo();
+        $arr['status'] ="Completed";
+        $data = $request->where($arr);
+        $this->view('adminhistory',[
+            'data' => $data
+        ]);
     }
 }
 ?>

@@ -4,15 +4,17 @@
             <h1>Admin Pending Request</h1>
             <br><hr><br><br>
             <table>
+
+            <?php if(!empty($data)){ foreach($data as $row){?>
                 <tr>
-                    <td>asdasd</td>
+                    <td><?= $row->fullname?><br><?= $row->datesubmit?></td>
                     <td>
-                        <a href="" class = "viewbtn">View</a>
-                        <a href="" class = "approvebtn">Approve</a>
-                        <a href="" class = "abortbtn">Abort</a>
+                        <a href="<?=ROOT?>/adminpview/<?=$row->id?>" class = "viewbtn">View</a>
+                        <a href="<?=ROOT?>/adminpending/approve/<?=$row->id?>" class = "approvebtn">Approve</a>
+                        <a href="<?=ROOT?>/adminpending/abort/" class = "abortbtn">Abort</a>
                     </td>
                 </tr>
-                
+            <?php } }?>
             </table>
 
         </div>

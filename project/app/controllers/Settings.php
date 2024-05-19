@@ -7,18 +7,21 @@ class Settings extends Controller{
        if(isset($_POST['submit'])){
         $user = new User();
         $id = $_SESSION['USER']->ID;
+      
         $allowed[] = 'image/png';
         $allowed[] = 'image/jpeg';
+
         if ($_FILES['image']['error'] == 0 && in_array($_FILES['image']['type'], $allowed)) {
+         
             $folder = "assets/images/";
             if (!file_exists($folder)) {
               mkdir($folder, 0777, true);
             }
             $destination = $folder . $_FILES['image']['name'];
-
             move_uploaded_file($_FILES['image']['tmp_name'], $destination);
-            $arr['img'] = $_POST['image'] = $destination;
+            $arr['img'] =  $destination;
         }
+       
         $arr['fname'] = $_POST['fname'];
         $arr['lname'] = $_POST['lname'];
         $arr['bday'] = $_POST['bday'];

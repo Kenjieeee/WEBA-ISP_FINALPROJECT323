@@ -3,7 +3,12 @@
 class Pending extends Controller{
     public function index()
     {
-        $this->view('pending');
+        $request = new Reqinfo();
+        $arr['status'] ="Pending";
+        $data = $request->where($arr);
+        $this->view('pending',[
+            'data' => $data
+        ]);
     }
 }
 
